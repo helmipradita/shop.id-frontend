@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js"
+      referrerpolicy="origin"
+    ></script>
+
+    <script>
+      tinymce.init({
+        selector: 'textarea#editor',
+        skin: 'bootstrap',
+        plugins: 'lists, link, image, media',
+        toolbar:
+          'h1 h2 bold italic strikethrough blockquote bullist numlist backcolor | link image media | removeformat help',
+        menubar: false,
+      });
+    </script>
+  </head>
+  <body>
+    <div class="">
+      <nav
+        class="d-flex justify-content-center navbar navbar-expand-lg navbar-light bg-light"
+      >
+        <img
+          src="../asset/shopping-bag 1.png"
+          height="25px"
+          alt=""
+          class="logo"
+        />
+        <img src="../asset/Shop.id.png" height="20px" alt="" class="logo" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <form class="form-inline ml-5 my-lg-0">
+              <input
+                class="form-control mr-sm-2 rounded-pill"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                Sch
+              </button>
+            </form>
+          </ul>
+
+          <div class="justify-content-end">
+            <button class="btn btn-outline-success mr-4 my-sm-0" type="submit">
+              Cart
+            </button>
+            <button
+              class="btn btn-danger my-2 my-sm-0 rounded-pill"
+              type="submit"
+            >
+              Login
+            </button>
+            <button
+              class="btn btn-outline-secondary ml-2 my-sm-0 rounded-pill"
+              type="submit"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-4">
+          <h3><b>Helmi Pradita</b></h3>
+          <p class="text-secondary">Ubah profile</p>
+          <br /><br />
+          <p>Store</p>
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Product
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">My Product</a>
+            <a class="dropdown-item" href="#">Selling product</a>
+          </div>
+          <p class="text-secondary">My Order</p>
+        </div>
+
+        <div class="col-md-8">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="container" style="margin: 10px">
+                <h3><b>Inventory</b></h3>
+                <hr />
+                <form>
+                  <div class="form-group row">
+                    <label
+                      for="staticName"
+                      class="col-sm-12 col-form-label text-secondary"
+                      >Name of goods</label
+                    >
+                    <div class="col-sm-6">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="inputPassword"
+                        placeholder="Password"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 mt-4">
+            <div class="card">
+              <div class="container" style="margin: 10px">
+                <h3><b>Items detail</b></h3>
+                <hr />
+                <form>
+                  <div class="form-group row">
+                    <label
+                      for="staticName"
+                      class="col-sm-12 col-form-label text-secondary"
+                      >Unit price</label
+                    >
+                    <div class="col-sm-8">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="inputPassword"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label
+                      for="staticName"
+                      class="col-sm-12 col-form-label text-secondary"
+                      >Stock</label
+                    >
+                    <div class="col-sm-8">
+                      <label class="sr-only" for="inlineFormInputGroup"
+                        >Username</label
+                      >
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inlineFormInputGroup"
+                        />
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">Buah</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label
+                      for="staticName"
+                      class="col-sm-12 col-form-label text-secondary"
+                      >Stock</label
+                    >
+
+                    <div class="col-sm-9">
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="exampleRadios"
+                          id="exampleRadios1"
+                          value="option1"
+                        />
+                        <label class="form-check-label" for="exampleRadios1">
+                          Laki - Laki
+                        </label>
+                      </div>
+
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="exampleRadios"
+                          id="exampleRadios1"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="exampleRadios1">
+                          Perempuan
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 mt-4">
+            <div class="card">
+              <div class="container" style="margin: 10px">
+                <h3><b>Photo of goods</b></h3>
+                <hr />
+                <form>
+                  <div class="form-group row">
+                    <div class="container">
+                      <div class="card">
+                        <div class="row">
+                          <div class="container">
+                            <div class="align-content-center">
+                              <img
+                                src="../asset/col-1.png"
+                                alt=""
+                                style="height: 150px"
+                              />
+                              <img
+                                src="../asset/col-1.png"
+                                alt=""
+                                style="height: 100px"
+                              />
+                              <img
+                                src="../asset/col-1.png"
+                                alt=""
+                                style="height: 100px"
+                              />
+                              <img
+                                src="../asset/col-1.png"
+                                alt=""
+                                style="height: 100px"
+                              />
+                              <img
+                                src="../asset/col-1.png"
+                                alt=""
+                                style="height: 100px"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="col-md-8 offset-4">
+                        <button
+                          type="submit"
+                          class="btn btn-outline-secondary rounded-pill mt-4 mb-4"
+                        >
+                          Upload Foto
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 mt-4">
+            <div class="card">
+              <div class="container" style="margin: 10px">
+                <h3><b>Description</b></h3>
+                <hr />
+
+                <div class="form-group">
+                  <textarea id="editor"></textarea>
+                </div>
+                <!--Bootstrap classes arrange web page components into columns and rows in a grid -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 offset-9">
+      <button type="submit" class="btn btn-danger rounded-pill mt-4 mb-4">
+        Jual
+      </button>
+    </div>
+    <br /><br />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
